@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html class="style-orange-3  custom_fonts comps live_website" lang="">
+
+<head>
+	<!-- This page is running on Unicorn Platform. -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="./static/css/main.css">
+	<script src="./static/js/main.js" defer></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- <link rel="icon" type="image/png" href="https://ucarecdn.com/f035415b-bc23-4e7a-8f75-2df68b57e20c/" sizes="16x16" /> -->
+
+	<meta property="og:type" content="website">
+
+	<title>Buildboard | Spreadsheets for builders</title>
+	<meta property="og:title" content="Buildboard | Spreadsheets for builders" />
+	<meta name="twitter:title" content="Buildboard | Spreadsheets for builders" />
+
+
+	<meta name="description" content="Spreadsheet like content management system built for builders.">
+	<meta property="og:description" content="Spreadsheet like content management system built for builders." />
+	<meta name="twitter:description" content="Spreadsheet like content management system built for builders." />
+
+
+	<meta property="og:image" content="https://ucarecdn.com/fd1ec98a-4ab0-4bbb-86a8-a112f472b679/image.png" />
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:image" content="https://ucarecdn.com/fd1ec98a-4ab0-4bbb-86a8-a112f472b679/image.png">
+
+
+	<link href="https://buildboard.unicornplatform.page/" rel="canonical">
+	<meta name="twitter:url" content="https://buildboard.unicornplatform.page/">
+	<meta property="og:url" content="https://buildboard.unicornplatform.page/">
+
+	<script>
+		var hamburger = document.querySelector(".hamburger");
+		if (hamburger != "") {
+			const menu = document.querySelector(".menu");
+			const menuItems = document.querySelectorAll(".menuItem");
+			const hamburger = document.querySelector(".hamburger");
+			const burger_inner = document.querySelector(".burger_inner");
+			const burger_box = document.querySelector(".burger_box");
+
+
+			function toggleMenu() {
+				if (hamburger.classList.contains("state-active-burger")) {
+					hamburger.classList.remove("state-active-burger");
+					menu.classList.remove("state-opened-menu");
+
+				} else {
+					hamburger.classList.add("state-active-burger");
+					menu.classList.add("state-opened-menu");
+
+
+				}
+			}
+
+			hamburger.addEventListener("click", toggleMenu);
+
+			menuItems.forEach(
+				function (menuItem) {
+					menuItem.addEventListener("click", toggleMenu);
+					hamburger = "";
+				}
+			)
+		}
+
+		var resources = document.querySelector(".resources");
+		if (resources != "") {
+			const menuItems = document.querySelectorAll(".menuItem");
+			function toggleMenu() {
+				if (resources.classList.contains("state-opened-dropdown")) {
+					
+					resources.classList.remove("state-opened-dropdown");
+
+				} else {
+					
+					resources.classList.add("state-opened-dropdown");
+
+
+				}
+			}
+
+			resources.addEventListener("click", toggleMenu);
+
+			menuItems.forEach(
+				function (menuItem) {
+					menuItem.addEventListener("click", toggleMenu);
+					resources = "";
+				}
+			)
+		}
+		var resourcesmobile = document.querySelector(".resourcesmobile");
+		if (resourcesmobile != "") {
+			const menuItems = document.querySelectorAll(".menuItem");
+			function toggleMenu() {
+				if (resourcesmobile.classList.contains("state-opened-dropdown")) {
+					
+					resourcesmobile.classList.remove("state-opened-dropdown");
+
+				} else {
+					
+					resourcesmobile.classList.add("state-opened-dropdown");
+
+
+				}
+			}
+
+			resourcesmobile.addEventListener("click", toggleMenu);
+
+			menuItems.forEach(
+				function (menuItem) {
+					menuItem.addEventListener("click", toggleMenu);
+					resourcesmobile = "";
+				}
+			)
+		}
+
+
+	</script>
+
+</head>
+
+<body class="font-work-sans comps" id="40591-86510">
+
+
+
+
+
+
+
+	<nav class="js-nav nav-02 ">
+		<div class="container container--large">
+			<div class="nav-02__box">
+				<div class="nav-02__logo"><a class="nav-02__link" href="/" target="_self">
+
+						<img loading="lazy" class="nav-02__logo_img"
+							src="https://ucarecdn.com/b427ec9e-c674-4827-88a1-ee8b6ceec79f/-/crop/985x186/117,513/-/preview/"
+							height="40" alt="Buildboard logos" />
+
+
+					</a></div>
+				<div class="nav-02__links js-menu menu">
+					<div class="nav-02__list_wrapper  ">
+						<ul class="nav-02__list nav-02__list--desktop">
+
+
+
+
+
+
+
+
+							<li class="nav-02__item">
+
+								<button class="button   button--black-outline  button--empty  button--has-dropdown button--has-arrow js-toggle-dropdown resources "><span
+										class="button__text">Resources</span>
+									<span class="dropdown">
+										<ul class="dropdown__list">
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">FAQ</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Tutorials</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Support</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Blog</span>
+												</a>
+											</li>
+
+
+										</ul>
+									</span>
+								</button>
+
+							</li>
+
+
+
+
+
+							<li class="nav-02__item">
+
+								<a class="button   button--black-outline  button--empty " href="#header-65-632311"
+									target="_self"><span class="button__text">Features</span>
+								</a>
+
+							</li>
+
+
+
+
+
+							<li class="nav-02__item">
+
+								<a class="button   button--black-outline  button--empty " href="#header-65-632311"
+									target="_self"><span class="button__text">Pricing</span>
+								</a>
+
+							</li>
+
+
+
+
+
+							<li class="nav-02__item">
+
+
+								<div class="buttons-set">
+									<ul class="buttons-set__list">
+										<li class="buttons-set__item"><a data-stripe-product-id=""
+												data-stripe-mode="payment" data-successful-payment-url=""
+												data-cancel-payment-url="" class="button button--black-outline "
+												href="#/user/authentication/signin" target="_self"><span
+													class="button__text">Sign
+													In</span></a></li>
+									</ul>
+								</div>
+
+							</li>
+						</ul>
+						<ul class="nav-02__list nav-02__list--mobile">
+
+							<li class="nav-02__item">
+
+								<button
+									class="button   button--black-outline  button--empty  button--has-dropdown button--has-arrow js-toggle-dropdown resourcesmobile"><span
+										class="button__text">Resources</span>
+									<span class="dropdown">
+										<ul class="dropdown__list">
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">FAQ</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Tutorials</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Support</span>
+												</a>
+											</li>
+
+
+
+											<li class="dropdown__item">
+												<a href="#header-65-632311" target="_self"
+													class="button button--empty button--black-outline">
+													<span class="button__text">Blog</span>
+												</a>
+											</li>
+
+
+										</ul>
+									</span>
+								</button>
+
+							</li>
+
+							<li class="nav-02__item">
+
+								<a class="button   button--black-outline  button--empty " href="#header-65-632311"
+									target="_self"><span class="button__text">Features</span>
+								</a>
+
+							</li>
+
+							<li class="nav-02__item">
+
+								<a class="button   button--black-outline  button--empty " href="#header-65-632311"
+									target="_self"><span class="button__text">Pricing</span>
+								</a>
+
+							</li>
+
+							<li class="nav-02__item">
+								<div class="buttons-set">
+									<ul class="buttons-set__list">
+										<li class="buttons-set__item"><a data-stripe-product-id=""
+												data-stripe-mode="payment" data-successful-payment-url=""
+												data-cancel-payment-url="" class="button button--black-outline "
+												href="#/user/authentication/signin" target="_self"><span
+													class="button__text">Sign
+													In</span></a></li>
+									</ul>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="nav-02__burger">
+						<button class="burger burger--black js-open-menu hamburger" type="button">
+							<div class="burger__box">
+								<div class="burger__inner"></div>
+							</div>
+						</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+	<div class="page-component__bg_image_box    bg-white-color  first_component   " id="header-65-632311">
+
+		<div class="page-component__bg_overlay_box ">
+
+		</div>
+
+		<div class="page-component__wrapper" style="z-index: 14;padding-top:70px;padding-bottom:70px;">
+
+
+
+
+			<header class="header-65">
+				<div class="container container--large header-65__container">
+					<div class="header-65__main">
+						<div class="header-65__main_content">
+
+
+							<h1 class="heading heading--accent header-65__heading ">Project Engineer's Personal
+								Workspace</h1>
+
+
+
+							<div class="header-65__text content_box ">
+								<p>Buildboard is a powerful <strong>all-in-one</strong> Content Management System built
+									for Construction Industry.&nbsp;&nbsp;</p>
+								<h1><strong>A place to track Varies, Peno registers, ITPs, CC certs, Samples,
+										Commissioning all in one place</strong></h1>
+							</div>
+
+							<div class="header-65__action_box">
+
+
+								<div class="buttons-set">
+									<ul class="buttons-set__list">
+										<li class="buttons-set__item"><a data-stripe-product-id=""
+												data-stripe-mode="payment" data-successful-payment-url=""
+												data-cancel-payment-url="" class="button button--accent-bg "
+												href="#/user/authentication/signup" target="_self"><span
+													class="button__text">Sign
+													up for free</span></a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="header-65__img">
+						<div class="header-65__img_wrapper">
+							<div class="header-65__big_mockup">
+
+
+								<div class="mockup_v2 mockup_v2--apple_macbook_air">
+									<div class="mockup_v2__img_box">
+
+										<div class="mockup_v2__screenshot mockup_v2__area">
+
+											<img class="mockup_v2__screenshot_img"
+												src="https://ucarecdn.com/91aab989-f89c-4fff-ac16-e61474b6cefb/-/crop/1712x1068/0,0/-/preview/buildboard.png"
+												alt="Buildboard">
+
+										</div>
+										<img class="mockup_v2__device_img js-tab-content-item" alt="Device frame"
+											src="./static/img/mockups_v2/desktops/apple_macbook_air_gold.png" />
+									</div>
+								</div>
+							</div>
+							<div class="header-65__small_mockup">
+
+
+								<div class="mockup_v2 mockup_v2--samsung_galaxy_s20_ultra_cosmic_black">
+									<div class="mockup_v2__img_box">
+
+										<div class="mockup_v2__screenshot mockup_v2__area">
+
+											<img class="mockup_v2__screenshot_img"
+												src="https://ucarecdn.com/eedd78ee-97ea-45db-83b4-c5d7d565bd7c/commissioning-sheet.png"
+												alt="Commissioning sheet">
+
+										</div>
+										<img class="mockup_v2__device_img js-tab-content-item" alt="Device frame"
+											src="./static/img/mockups_v2/phones/samsung_galaxy_s20_utra_cosmic_black.png" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+		</div>
+	</div>
+
+
+
+	<div class="page-component__bg_image_box    bg-white-color   " id="tabs-04-59431">
+
+		<div class="page-component__bg_overlay_box ">
+
+		</div>
+
+		<div class="page-component__wrapper" style="z-index: 13;padding-top:50px;padding-bottom:50px;">
+
+
+
+			<div class="tabs-04">
+
+
+
+
+
+				<div class="container container--small">
+					<div class="title-box title-box--center">
+
+
+						<h2 class="heading ">Data your way</h2>
+
+
+
+						<div class="title-box__text content_box ">
+							<p>Buildboard is like Excel and a whole lot more. Think of us as smarter way to build a
+								spreadsheets</p>
+							<p></p>
+							<h2><strong>De-risk, De-stress</strong></h2>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="tabs-04__box">
+						<div class="tabs-04__item_container">
+							<ul class="tabs-04__item_list js-tabs-item-list">
+
+
+								<li class="tabs-04__item_box js-tab-content  state-active-tab  " data-index="tab-0"
+									data-group="my-images-group-tabs-04-59431">
+
+
+									<div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+										<button class="tabs-04__button state-active-tab" type="button"
+											data-index="tab-0" data-group="my-images-group-tabs-04-59431">
+											<h2 class="tabs-04__button_title">Create anything</h2>
+											<div class="tabs-04__button_text">Standardize and ensure compliance</div>
+										</button>
+									</div>
+
+
+									<div class="tabs-04__item js-tab-content-item" data-height="673">
+										<img loading="lazy" class="tabs-04__img js-lightbox-single-image"
+											src="https://ucarecdn.com/2d7fc70c-6e5a-48e4-b7f6-ed0326a9cf55/variation-submission.png"
+											alt="Variation submission" data-width="847" data-height="673" />
+									</div>
+								</li>
+
+
+
+								<li class="tabs-04__item_box js-tab-content " data-index="tab-1"
+									data-group="my-images-group-tabs-04-59431">
+
+
+									<div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+										<button class="tabs-04__button state-active-tab" type="button"
+											data-index="tab-1" data-group="my-images-group-tabs-04-59431">
+											<h2 class="tabs-04__button_title">Work anywhere</h2>
+											<div class="tabs-04__button_text">Use wherever the most suitable for you, on
+												any device. Buildboard is there when you need it.</div>
+										</button>
+									</div>
+
+
+									<div class="tabs-04__item js-tab-content-item" data-height="887">
+										<img loading="lazy" class="tabs-04__img js-lightbox-single-image"
+											src="https://ucarecdn.com/a333b977-edf2-4fa2-879c-bbf19bc8dd09/wax-interface-3.png"
+											alt="Wax interface 3" data-width="1442" data-height="887" />
+									</div>
+								</li>
+
+
+
+								<li class="tabs-04__item_box js-tab-content " data-index="tab-2"
+									data-group="my-images-group-tabs-04-59431">
+
+
+									<div class="tabs-04__button_item tabs-04__button_item--mobile-only">
+										<button class="tabs-04__button state-active-tab" type="button"
+											data-index="tab-2" data-group="my-images-group-tabs-04-59431">
+											<h2 class="tabs-04__button_title">Organize everything</h2>
+											<div class="tabs-04__button_text">Digitise manual, laborious processes by
+												giving contractors the tools to digitally record and handover crucial
+												information such as Insurance documentation, Guarantees and Producer
+												Statements.</div>
+										</button>
+									</div>
+
+
+									<div class="tabs-04__item js-tab-content-item" data-height="887">
+										<img loading="lazy" class="tabs-04__img js-lightbox-single-image"
+											src="https://ucarecdn.com/ad3c8b20-719e-42f1-a56b-7954e77f3659/wax-interface-4.png"
+											alt="Wax interface 4" data-width="1442" data-height="887" />
+									</div>
+								</li>
+
+
+							</ul>
+						</div>
+						<ul class="tabs-04__buttons_list" style="margin-top: -22% !important;">
+
+
+							<li class="tabs-04__button_item">
+								<button class="tabs-04__button  state-active-tab   js-open-tab" type="button"
+									data-index="tab-0" data-group="my-images-group-tabs-04-59431">
+									<h2 class="tabs-04__button_title">Create anything</h2>
+									<div class="tabs-04__button_text">Standardize and ensure compliance</div>
+								</button>
+							</li>
+
+
+
+							<li class="tabs-04__button_item">
+								<button class="tabs-04__button  js-open-tab" type="button" data-index="tab-1"
+									data-group="my-images-group-tabs-04-59431">
+									<h2 class="tabs-04__button_title">Work anywhere</h2>
+									<div class="tabs-04__button_text">Use wherever the most suitable for you, on any
+										device. Buildboard is there when you need it.</div>
+								</button>
+							</li>
+
+
+
+							<li class="tabs-04__button_item">
+								<button class="tabs-04__button  js-open-tab" type="button" data-index="tab-2"
+									data-group="my-images-group-tabs-04-59431">
+									<h2 class="tabs-04__button_title">Organize everything</h2>
+									<div class="tabs-04__button_text">Digitise manual, laborious processes by giving
+										contractors the tools to digitally record and handover crucial information such
+										as Insurance documentation, Guarantees and Producer Statements.</div>
+								</button>
+							</li>
+
+
+						</ul>
+					</div>
+					<div class="bottom_cta">
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="page-component__bg_image_box    bg-light_gray-color   " id="features-09-888271">
+
+		<div class="page-component__bg_overlay_box ">
+
+		</div>
+
+		<div class="page-component__wrapper"
+			style="z-index: 12;padding-top:30px;padding-bottom:50px;margin-top:-15% !important;">
+
+
+
+			<div class="features-09">
+
+
+
+
+
+				<div class="container container--small">
+					<div class="title-box title-box--center">
+
+
+						<h2 class="heading ">Build you own eco-system</h2>
+
+
+
+						<div class="title-box__text content_box ">
+							<p>Whether its <strong>personal tasks</strong> or large <strong>team projects</strong> <span
+									style="color: rgb(77,81,86);background-color: rgb(255,255,255);font-size: 14px;font-family: arial, sans-serif;">—
+									Buildboard has got it covered.</span></p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container container--large features-09__container">
+					<ul class="features-09__list">
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Private workspace</h3>
+							<div class="features-09__text content_box">
+								<p>Protect your individual data with unique passwords.</p>
+							</div>
+							<div class="feature__button_box">
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  features-09__item--new  ">
+
+							<span class="tag  "><span class="tag__text">New</span></span>
+
+							<h3 class="features-09__title">Standardize compliance</h3>
+							<div class="features-09__text content_box">
+								<p>Even by the Contractors run projects using amalgamation of Excel spreadsheets, each
+									with overlapping and duplicative information. Huge opportunity for error in transfer
+									and waste of effort in duplication.&nbsp;&nbsp;</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">Learn more</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Central Hub</h3>
+							<div class="features-09__text content_box">
+								<p>Peno registers, Subbie lists, VE logs, Risk matrices, Meeting minutes all in one
+									place. Central Hub for Subbies, Consultants, Clients.&nbsp;</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">Learn more</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  features-09__item--new  ">
+
+							<span class="tag  "><span class="tag__text">New</span></span>
+
+							<h3 class="features-09__title">Templates</h3>
+							<div class="features-09__text content_box">
+								<p>Explore our gallery of industry tested templates and duplicate any them with a single
+									click.</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">View gallery</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Stay in sync</h3>
+							<div class="features-09__text content_box">
+								<p>Secure and fully automatic multi-device synchronization.</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">Learn more</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">App Integrations</h3>
+							<div class="features-09__text content_box">
+								<p>Buildboard easily integrates with your favourite apps like Teams or Outlook.</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">See full list</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Tracked</h3>
+							<div class="features-09__text content_box">
+								<p>Every keystroke is logged. Trackby is the single source of truth.</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">Learn more</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Advanced search</h3>
+							<div class="features-09__text content_box">
+								<p>Use powerful search tools to find what you need in seconds.</p>
+							</div>
+							<div class="feature__button_box">
+
+
+
+
+
+
+
+								<a data-stripe-product-id="" data-stripe-mode="payment" data-successful-payment-url=""
+									data-cancel-payment-url="" class="button button--empty  button--accent-outline"
+									href="#features-09-888271" target="_self">
+									<span class="button__text">Learn more</span>
+									<span class="icon">
+										<svg viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M12.823 4.164L8.954.182a.592.592 0 0 0-.854 0 .635.635 0 0 0 0 .88l2.836 2.92H.604A.614.614 0 0 0 0 4.604c0 .344.27.622.604.622h10.332L8.1 8.146a.635.635 0 0 0 0 .88.594.594 0 0 0 .854 0l3.869-3.982a.635.635 0 0 0 0-.88z"
+												fill-rule="nonzero" fill="#00396B"></path>
+										</svg>
+									</span>
+								</a>
+
+
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  ">
+
+							<h3 class="features-09__title">Staple attachments</h3>
+							<div class="features-09__text content_box">
+								<p>Add attachments to your data. For example, fan datasheet, Delivery docket,
+									Pre-commissioning sheet, Commissioning sheet, All in Place!</p>
+							</div>
+							<div class="feature__button_box">
+
+							</div>
+						</li>
+
+
+
+						<li class="features-09__item  features-09__item--new  ">
+
+							<h3 class="features-09__title">Compartmentalize Access</h3>
+							<div class="features-09__text content_box">
+								<p>Fine-grained access control even at database, table &amp; column level.&nbsp;</p>
+							</div>
+							<div class="feature__button_box">
+
+							</div>
+						</li>
+
+
+
+
+					</ul>
+					<div class="bottom_cta">
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="page-component__bg_image_box    bg-white-color   " id="pricing-01-773411">
+
+		<div class="page-component__bg_overlay_box ">
+
+		</div>
+
+		<div class="page-component__wrapper" style="z-index: 11;padding-top:50px;padding-bottom:70px;">
+
+
+
+
+
+			<div class="pricing-01">
+
+
+
+
+
+				<div class="container container--small">
+					<div class="title-box title-box--center">
+
+
+						<h2 class="heading ">Free for personal use</h2>
+
+
+
+						<div class="title-box__text content_box ">
+							<p>Use most of Buildboard's features <strong>for free</strong>. Upgrade to the<strong> Pro
+									plan</strong> to invite your team.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container">
+
+				</div>
+				<div class="container">
+					<div class="pricing-01__cards_container">
+
+						<ul class="pricing-01__cards_list">
+
+
+
+							<li class="pricing-01__card_box">
+								<div class="pricing-01__card">
+
+									<div class="pricing-01__card_top">
+
+
+
+
+										<img loading="lazy"
+											src="https://ucarecdn.com/a4ab40eb-4bfa-495f-b550-d2c6542c8877/personal-icon.png"
+											alt="Personal icon" class="pricing-01__card_img" height="30" />
+
+
+									</div>
+
+									<div class="pricing-01__card_bottom">
+										<div class="pricing-01__card_title_box">
+
+											<h3 class="pricing-01__card_title">Personal</h3>
+
+											<div class="pricing-01__card_price_box">
+												<div class="pricing-01__card_price js-tab-content "
+													data-index="yearly-price-1"
+													data-group="my-pricing-pricing-01-773411">
+
+												</div>
+												<div class="pricing-01__card_price js-tab-content  state-active-tab "
+													data-index="monthly-price-1"
+													data-group="my-pricing-pricing-01-773411">Free
+
+												</div>
+											</div>
+										</div>
+										<div class="pricing-01__card_info text content_box"
+											style="background-color: white !important;">Personal plan contains most
+											of the features, so your solo experience will not be limited. Create notes,
+											use templates, integrate apps and more.</div>
+										<div class="pricing-01__card_button">
+
+
+
+
+
+
+
+
+
+
+											<a data-stripe-product-id="" data-stripe-mode="payment"
+												data-successful-payment-url="" data-cancel-payment-url=""
+												class="button button--accent-outline " href="#pricing-01-773411"
+												target="_self"><span class="button__text">Get started</span></a>
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+
+
+
+							<li class="pricing-01__card_box">
+								<div class="pricing-01__card">
+
+									<div class="pricing-01__card_top">
+
+
+
+
+										<img loading="lazy"
+											src="https://ucarecdn.com/bb0e5f9d-b217-4ad1-9f27-d763d5746cbd/pro-icon.png"
+											alt="Pro icon" class="pricing-01__card_img" height="44" />
+
+
+									</div>
+
+									<div class="pricing-01__card_bottom">
+										<div class="pricing-01__card_title_box">
+
+											<h3 class="pricing-01__card_title">Pro</h3>
+
+											<div class="pricing-01__card_price_box">
+												<div class="pricing-01__card_price js-tab-content "
+													data-index="yearly-price-1"
+													data-group="my-pricing-pricing-01-773411">$
+													<div class="pricing-01__card_period">/year</div>
+												</div>
+												<div class="pricing-01__card_price js-tab-content  state-active-tab "
+													data-index="monthly-price-1"
+													data-group="my-pricing-pricing-01-773411">$99
+													<div class="pricing-01__card_period">/month</div>
+												</div>
+											</div>
+										</div>
+										<div class="pricing-01__card_info text content_box"
+											style="background-color: white !important;">Pro plan is perfect for
+											teams of any scale. Unlock powerful collaboration tools and achieve maximum
+											productivity. Share pages, invite friends and more.</div>
+										<div class="pricing-01__card_button">
+
+
+
+
+
+
+
+
+
+
+											<a data-stripe-product-id="" data-stripe-mode="payment"
+												data-successful-payment-url="" data-cancel-payment-url=""
+												class="button button--accent-bg " href="#pricing-01-773411"
+												target="_self"><span class="button__text">Try it for free</span></a>
+
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</li>
+
+
+
+						</ul>
+					</div>
+				</div>
+				<div class="bottom_cta">
+
+
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="page-component__bg_image_box    bg-light_gray-color   " id="cta_button-01-869731">
+
+		<div class="page-component__bg_overlay_box ">
+
+		</div>
+
+		<div class="page-component__wrapper" style="z-index: 10;padding-top:50px;padding-bottom:70px;">
+
+			<div class="cta_button-01">
+
+
+
+
+
+				<div class="container container--small">
+					<div class="title-box title-box--center">
+
+
+						<h2 class="heading ">Give it a try</h2>
+
+
+
+						<div class="title-box__text content_box ">
+							<p>Create a free account and explore.</p>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="container container--small">
+					<div class="cta_button-01__button_box">
+
+
+						<div class="buttons-set">
+							<ul class="buttons-set__list">
+								<li class="buttons-set__item"><a data-stripe-product-id="" data-stripe-mode="payment"
+										data-successful-payment-url="" data-cancel-payment-url=""
+										class="button button--accent-bg " href="#/user/authentication/signup"
+										target="_self"><span class="button__text">Sign up for free</span></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="bg-light_gray-color">
+		<footer class="footer-04" id="footer">
+			<div class="footer-04__top">
+				<div class="container">
+					<div class="footer-04__top_wrapper ">
+
+
+
+						<div class="footer-04__col">
+
+							<a class="footer-04__logo_link" href="/" target="_self">
+
+
+
+								<img loading="lazy" alt="Buildboard logos" class="footer-04__logo"
+									src="https://ucarecdn.com/15e4c97e-d26d-4414-b5fa-86f604501292/-/crop/1200x195/0,514/-/preview/buildboard-logos.png"
+									height="27" />
+
+
+							</a>
+
+
+							<div class="footer-04__info content_box">
+								<p style="text-align:start"><span style="color: rgba(0,0,0,0.6);background-color: rgb(255,254,252);font-size: 15px;font-family: inter, -apple-system, system-ui, 
+										Segoe UI, Helvetica, Apple Color Emoji , Arial, sans-serif, Segoe UI Emoji
+										, Segoe UI Symbol;">© 2021</span> <span style="color: rgba(0,0,0,0.6);background-color: rgb(255,254,252);font-size: 15px;font-family: inter, -apple-system, system-ui, 
+										Segoe UI, Helvetica, Apple Color Emoji , Arial, sans-serif, Segoe UI Emoji
+										, Segoe UI Symbol;">Wax Lab, Inc.</span></p>
+							</div>
+
+						</div>
+
+
+
+
+						<div class="footer-04__col">
+							<h3 class="footer-04__title">Product</h3>
+							<ul class="footer-04__list">
+
+
+								<li class="footer-04__item">
+									<a href="/how-it-works" target="_self" class="footer-04__link">
+										How it Works
+									</a>
+								</li>
+
+
+
+								<li class="footer-04__item">
+									<a href="Pricing" target="_self" class="footer-04__link">
+										Pricing
+									</a>
+								</li>
+
+
+
+
+
+
+
+
+							</ul>
+						</div>
+
+
+
+						<div class="footer-04__col">
+							<h3 class="footer-04__title">Company</h3>
+							<ul class="footer-04__list">
+
+
+
+
+
+
+								<li class="footer-04__item">
+									<a href="www.maidenventures.co" target="_self" class="footer-04__link">
+										About us
+									</a>
+								</li>
+
+
+
+
+
+
+							</ul>
+						</div>
+
+
+
+						<div class="footer-04__col">
+
+							<div class="footer-04__social_box">
+
+
+								<div class="social-buttons  social-buttons--left ">
+									<ul class="social-buttons__list">
+										<li class="social-buttons__item"><a
+												class="social-buttons__link social-buttons__link--twitter"
+												href="https://twitter.com" target="_blank"><img loading="lazy"
+													class="social-buttons__icon" alt="twitter icon"
+													src="./static/img/icons/social/color/twitter.svg" /></a></li>
+										<li class="social-buttons__item"><a
+												class="social-buttons__link social-buttons__link--instagram"
+												href="https://instagram.com" target="_blank"><img loading="lazy"
+													class="social-buttons__icon" alt="instagram icon"
+													src="./static/img/icons/social/color/instagram.svg" /></a></li>
+										<li class="social-buttons__item"><a
+												class="social-buttons__link social-buttons__link--facebook"
+												href="https://facebook.com" target="_blank"><img loading="lazy"
+													class="social-buttons__icon" alt="facebook icon"
+													src="./static/img/icons/social/color/facebook.svg" /></a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+				<div class="footer-04__bottom">
+					<div class="container">
+						<div class="footer-04__bottom_wrapper ">
+
+
+
+							<div class="buttons-set">
+								<ul class="buttons-set__list">
+									<li class="buttons-set__item"><a data-stripe-product-id=""
+											data-stripe-mode="payment" data-successful-payment-url=""
+											data-cancel-payment-url="" class="button button--accent-outline "
+											href="#press-03-637621" target="_self"><span class="button__text">Create
+												free account</span></a></li>
+								</ul>
+							</div>
+
+
+							<ul class="footer-04__bottom_links ">
+
+								<li class="footer-04__bottom_links_item">
+									<a target="_blank" href="#press-03-637621"
+										class="footer-04__bottom_link footer-04__bottom_item">
+										Terms &amp; Privacy
+									</a>
+								</li>
+
+								<li class="footer-04__bottom_links_item">
+									<a target="_blank" href="mailto:hi@unicornplatform.com"
+										class="footer-04__bottom_link footer-04__bottom_item">
+
+									</a>
+								</li>
+
+								<li class="footer-04__bottom_links_item">
+									<a target="_blank" href="" class="footer-04__bottom_link footer-04__bottom_item">
+
+									</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</footer>
+	</div>
+
+
+
+
+	<div class="by-unicorn-platform by-unicorn-platform--fixed ">
+		<a class="by-unicorn-platform__link" href="https://unicornplatform.com/?ref=user_website" target="_blank"
+			title="This page was made in Unicorn Platform">Runs on
+			<img loading="lazy" class="by-unicorn-platform__logo"
+				src="https://app.unicornplatform.com/static/img/logos/unicorn-platform-logo.svg" height="12" width="12"
+				alt="Unicorn Platform logo"><b>Unicorn Platform</b></a>
+	</div>
+
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+					<button class="pswp__button pswp__button--share" title="Share"></button>
+					<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div>
+				</div>
+				<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+				<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<style>
+		.page-component__bg_image_box .page-component__bg_image_box .page-component__bg_overlay_box {
+			position: relative;
+		}
+
+		body .page-component__bg_overlay_box {
+			position: absolute;
+		}
+
+		.footer-02__text.content_box a {
+			color: inherit !important;
+		}
+
+		.footer-04__info {
+			font-size: 14px;
+		}
+	</style>
+
+
+
+
+</body>
+
+</html>
